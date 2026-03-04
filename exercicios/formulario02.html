@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="/action_page.html">
+        <fieldset>
+            <legend><strong>Sistema de Gestão Academica</strong></legend>
+            <h3>Manutenção de Usuarios so Sistema Interno</h3>
+            <div>
+                <label for=“pnome">Login:</label><br>
+                <input type="text" id="pnome" name="pnome"><br>
+                <label for=“unome">Senha:</label><br>
+                <input type="text" id="unome" name="unome">
+            </div>
+
+            <div>
+                <label for="status"><strong>Status:</strong></label><br>
+                <select name="status" id="status">
+                    <option value="ativo">Ativo</option>
+                    <option value="inativo">Inativo</option>
+                </select>
+            </div>
+
+            <div>
+                <label><strong>Tipo:</strong></label>
+                <br>
+                <input type="radio" id="tec" name="fav_language" value="tec">
+                <label for="tec">Técnico</label>
+                <input type="radio" id="prof" name="fav_language" value="prof">
+                <label for="prof">Professor</label>
+                <input type="radio" id="alu" name="fav_language" value="alu">
+                <label for="alu">Aluno</label>
+            </div>
+
+            <div>
+                <label for="data"><strong>Data de Criação:</strong></label><br>
+                <input type="date" id="data" name="data">
+                
+            </div>
+
+            <div>
+                <label><strong>Perfil:</strong></label>
+                <br>
+                <input type="radio" id="conv" name="fav_language" value="conv">
+                <label for="conv">Convidado</label>
+                <input type="radio" id="adm" name="fav_language" value="adm">
+                <label for="adm">Adiministrador</label>
+            </div>
+
+
+            <div>
+                <label for="obs"><strong>Observações:</strong></label><br>
+                <textarea id="obs" name="obs" rows="4" cols="50">
+                </textarea>
+            </div>
+
+            <div>
+                <label><strong>Modulos:</strong></label>
+                <br>
+                <input type="checkbox" id="crp" name="crp" value="crp">
+                <label for="crp">Compra</label>
+                <input type="checkbox" id="bib" name="bib" value="bib">
+                <label for="bib">Biblioteca</label>
+                <input type="checkbox" id="python" name="python" value="python">
+                <label for="python">Academico</label><br>
+                <input type="checkbox" id="php" name="php" value="php">
+                <label for="php">Documentação</label>
+                <input type="checkbox" id="java" name="java" value="java">
+                <label for="java">Recursos Humanos</label>
+            </div>
+
+            <input type="submit" value="Salvar">
+            <input type="submit" value="Excluir">
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="/exercicios/formulario02.html">
+        <fieldset>
+            <legend><strong>Formulario Matricula aluno</strong></legend>
+            <div>
+                <label for=“pnome">Primeiro nome:</label><br>
+                <input type="text" id="pnome" name="pnome"><br>
+                <label for=“unome">Sobrenome:</label><br>
+                <input type="text" id="unome" name="unome">
+            </div>
+
+            <div>
+                <label><strong>Curso:</strong></label>
+                <br>
+                <input type="radio" id="ti" name="fav_language" value="ti">
+                <label for="ti">Técnico em Informatica</label><br>
+                <input type="radio" id="ads" name="fav_language" value="ads">
+                <label for="ads">Graduação - Analise e Desenvolvimento de sistema</label><br>
+                <input type="radio" id="pg" name="fav_language" value="pg">
+                <label for="pg">Profissionalizante - Programação Web</label>
+            </div>
+
+            <div>
+                <label><strong>Linguagem de programação favorita:</strong></label>
+                <br>
+                <input type="checkbox" id="php" name="php" value="php">
+                <label for="php">PHP</label><br>
+                <input type="checkbox" id="java" name="java" value="java">
+                <label for="java">Java</label><br>
+                <input type="checkbox" id="python" name="python" value="python">
+                <label for="python">Python</label>
+            </div>
+
+            <div>
+                <label for="turnos"><strong>Escolha um turno:</strong></label><br>
+                <select name="turnos" id="turnos">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="unidades"><strong>Escolha uma unidade:</strong></label><br>
+                <input list="unidades" name="unidade" id="unidade">
+                <datalist id="unidades">
+                    <option value="Chapecó">
+                    <option value="Xanxerê">
+                    <option value="Caçador">
+                    <option value="São Lorenzo">
+                    <option value="São Miguel do Oeste">
+                    <option value="São Carlos">
+                </datalist>
+            </div>
+
+            <input type="submit" value="Enviar">
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>
